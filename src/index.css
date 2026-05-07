@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  --color-glow: #3d3c96;
+  --color-primary: #534fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+a {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.font-secondary, .font-mono {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+
+/* ─── Scrollbar hide utility ────────────────────────── */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ─── Solana wallet adapter button overrides ─────────── */
+.wallet-adapter-button {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  padding: 8px 16px !important;
+  height: fit-content !important;
+  border-radius: 8px !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.10) !important;
+  transition: background 0.2s, border-color 0.2s !important;
+  line-height: 14px !important;
+}
+
+.wallet-adapter-button:hover {
+  background: rgba(255, 255, 255, 0.10) !important;
+}
+
+.wallet-adapter-button-trigger {
+  background: var(--color-primary) !important;
+  border-color: rgba(92, 107, 246, 0.35) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.wallet-adapter-button-trigger:hover {
+  background: #6f6dff !important;
+}
+
+.wallet-adapter-button img {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.hero {
+  background: url("/bg2.png") no-repeat;
+  background-position-y: -200px;
+  background-position-x: center;
+  background-size: cover;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+
+html::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
