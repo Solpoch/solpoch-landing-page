@@ -1,5 +1,5 @@
 import { Download, X } from "lucide-react";
-import { releaseUrl } from "../lib/constants";
+import { releaseUrl } from "../../lib/constants";
 
 export default function DownloadModal({ setShowDownloadModal }: { setShowDownloadModal: (show: boolean) => void }) {
   const steps = [

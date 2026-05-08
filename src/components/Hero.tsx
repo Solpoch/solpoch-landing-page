@@ -1,8 +1,9 @@
 import { motion } from "motion/react";
 import { ArrowRight, Github } from "lucide-react";
 import { useState } from "react";
-import DownloadModal from "./DownloadModal";
+import DownloadModal from "./Modals/DownloadModal";
 import { githubUrl } from "../lib/constants";
+import ProblemSection from "./ProblemSection";
 
 export default function Hero() {
 
@@ -13,7 +14,7 @@ export default function Hero() {
       {
         showDownloadModal && <DownloadModal setShowDownloadModal={setShowDownloadModal} />
       }
-      <section className="relative overflow-hidden pt-32 pb-20 lg:pt-48 lg:pb-20 hero">
+      <section className="relative overflow-hidden pt-32 pb-6 sm:pb-20 lg:pt-48 lg:pb-20 hero">
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col items-center text-center">
@@ -26,7 +27,7 @@ export default function Hero() {
             >
               {/* <span className="flex h-2 w-2 rounded-full bg-green-500 mr-2"></span>
             The Dev Wallet for Solana */}
-              <img src="/logo-long.png" alt="Solpoch Logo" className="h-12 mb-4" />
+              <img src="/logo-long.png" alt="Solpoch Logo" className="h-6 sm:h-12 mb-4" />
             </motion.div>
 
             {/* Headline */}
@@ -36,13 +37,13 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="max-w-4xl"
             >
-              <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-7xl mb-6">
+              <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-7xl mb-6">
                 <span className="text-transparent bg-clip-text bg-linear-to-b from-[#ffffff] to-[#534fff]">
                   Chrome DevTools
                 </span>
-                <div className="flex gap-4 flex-wrap justify-center">
+                <div className="flex sm:gap-4 flex-wrap justify-center">
                   for Solana
-                  <span className="font-secondary font-bold italic text-transparent bg-clip-text bg-linear-to-b from-[#ffffff] to-[#534fff]">
+                  <span className="font-secondary font-bold italic text-transparent bg-clip-text bg-linear-to-b from-[#ffffff] to-[#534fff] leading-[1]">
                     Transactions
                   </span>
                 </div>
@@ -54,7 +55,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="max-w-2xl text-lg text-slate-300 mb-10"
+              className="max-w-2xl text-sm sm:text-lg text-slate-300 mb-10"
             >
               Simulate, trace RPC calls, and auto-fix transactions before they fail.
               Stop guessing why your transaction broke and
@@ -86,7 +87,6 @@ export default function Hero() {
           {/* Visuals */}
 
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center z-0">
-            {/* <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-purple-600/20 blur-[120px]" /> */}
             <div className="absolute bottom-[10%] right-[calc(50%-450px)] w-[900px] h-[400px] rounded-full bg-primary/10 blur-[120px]" />
           </div>
 
@@ -94,7 +94,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="flex items-center justify-center z-10"
+            className="sm:flex items-center justify-center z-10 hidden"
           >
             <img src="/product.png" alt="divider" className="w-full max-w-4xl my-16 z-10" />
           </motion.div>

@@ -23,7 +23,8 @@ button {
   cursor: pointer;
 }
 
-.font-secondary, .font-mono {
+.font-secondary,
+.font-mono {
   font-family: "IBM Plex Mono", monospace;
 }
 
@@ -113,4 +114,11 @@ html::-webkit-scrollbar-thumb {
 
 html::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.25);
+}
+
+@media screen and (max-width: 640px) {
+  .hero {
+    background-position-y: -100px;
+    background-size: 300%;
+  }
 }
