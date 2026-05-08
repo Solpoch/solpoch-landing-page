@@ -57,8 +57,8 @@ export default function Hero() {
               className="max-w-2xl text-lg text-slate-300 mb-10"
             >
               Simulate, trace RPC calls, and auto-fix transactions before they fail.
-              Stop guessing why your transaction broke.
-              See exactly what your dApp is doing — from instructions to RPC calls.
+              Stop guessing why your transaction broke and
+              see exactly what your dApp is doing, from instructions to RPC calls.
             </motion.p>
 
             {/* CTAs */}
