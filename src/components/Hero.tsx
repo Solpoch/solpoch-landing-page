@@ -14,7 +14,7 @@ export default function Hero() {
       {
         showDownloadModal && <DownloadModal setShowDownloadModal={setShowDownloadModal} />
       }
-      <section className="relative overflow-hidden pt-32 pb-6 sm:pb-20 lg:pt-48 lg:pb-20 hero">
+      <section className="relative overflow-hidden pt-32 pb-6 sm:pb-30 lg:pt-48 lg:pb-30 hero">
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col items-center text-center">
@@ -87,7 +87,7 @@ export default function Hero() {
           {/* Visuals */}
 
           <div className="pointer-events-none absolute inset-0 flex items-center justify-center z-0">
-            <div className="absolute bottom-[10%] right-[calc(50%-450px)] w-[900px] h-[400px] rounded-full bg-primary/10 blur-[120px]" />
+            <div className="absolute bottom-[10%] right-[calc(50%-500px)] w-[1000px] h-[450px] rounded-full bg-primary/15 blur-[120px]" />
           </div>
 
           <motion.div
@@ -96,7 +96,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="sm:flex items-center justify-center z-10 hidden"
           >
-            <img src="/product.png" alt="divider" className="w-full max-w-4xl my-16 z-10" />
+            <img src="/product2.png" alt="divider" className="w-full max-w-4xl my-16 z-10 mt-8" />
           </motion.div>
 
         </div>
