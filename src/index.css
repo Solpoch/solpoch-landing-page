@@ -100,6 +100,20 @@ button {
   background-size: cover;
 }
 
+.bg-footer {
+  background: url("/footer.png") no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: cover;
+}
+
+.bg-footer-mobile {
+  background: url("/footer-mobile.png") no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: cover;
+}
+
 .scrollbar::-webkit-scrollbar {
   width: 8px;
   height: 8px;

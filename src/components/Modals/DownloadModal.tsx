@@ -22,7 +22,7 @@ export default function DownloadModal({ setShowDownloadModal }: { setShowDownloa
     }
   ];
   return (
-    <div className="fixed w-full h-full bg-black/50 z-50 flex items-center justify-center p-4">
+    <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 backdrop-blur-xs">
       <div className="flex flex-col gap-3 w-250 max-h-fit bg-[#1a1a1a] p-6 rounded-2xl">
         <div className="flex justify-end">
           <button onClick={() => setShowDownloadModal(false)} className="p-2 rounded-full hover:bg-white/20 transition-colors">

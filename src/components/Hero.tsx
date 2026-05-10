@@ -96,7 +96,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="sm:flex items-center justify-center z-10"
           >
-            <img src="/product2.png" alt="divider" className="w-full max-w-4xl my-16 z-10 mt-8" />
+            <img src="/product4.png" alt="divider" className="w-full max-w-4xl my-16 z-10 mt-8" />
           </motion.div>
 
         </div>
