@@ -1,5 +1,51 @@
-import { Check, X } from "lucide-react";
+import { useRef, useState } from "react";
+import { Check, Pause, Play, X } from "lucide-react";
 import FadeIn from "./Animation/FadeIn";
+
+type VideoWithOverlayProps = {
+  src: string;
+};
+
+function VideoWithOverlay({ src }: VideoWithOverlayProps) {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [isPlaying, setIsPlaying] = useState(true);
+
+  const togglePlayback = () => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    if (video.paused) {
+      video.play();
+      setIsPlaying(true);
+    } else {
+      video.pause();
+      setIsPlaying(false);
+    }
+  };
+
+  return (
+    <div className="relative">
+      <video
+        ref={videoRef}
+        src={src}
+        autoPlay
+        loop
+        muted
+        className="rounded-2xl"
+        onPlay={() => setIsPlaying(true)}
+        onPause={() => setIsPlaying(false)}
+      ></video>
+      <button
+        type="button"
+        onClick={togglePlayback}
+        aria-label={isPlaying ? "Pause video" : "Play video"}
+        className="absolute bottom-3 left-3 z-10 inline-flex h-9 w-9 items-center justify-center rounded-full bg-black/60 text-white backdrop-blur-md transition hover:bg-black/75"
+      >
+        {isPlaying ? <Pause size={16} /> : <Play size={16} />}
+      </button>
+    </div>
+  );
+}
 
 export default function ProblemSection() {
   return (
@@ -30,7 +76,7 @@ export default function ProblemSection() {
           >
             <div className="bg-rose-400 w-[150px] h-[200px] absolute top-0 left-1/2 transform -translate-x-1/2"></div>
             <div className="backdrop-blur-[100px] bg-white/2 absolute top-0 left-0 w-full h-full rounded-4xl p-8">
-              <video src="/tx-error.mp4" autoPlay loop muted className="rounded-2xl"></video>
+              <VideoWithOverlay src="/tx-error.mp4" />
               <div className="text-rose-300 mt-12 font-normal text-2xl">
                 <h1>No idea ? You're flying blind</h1>
               </div>
@@ -68,7 +114,7 @@ export default function ProblemSection() {
           >
             <div className="bg-primary w-[150px] h-[200px] absolute top-0 left-1/2 transform -translate-x-1/2"></div>
             <div className="backdrop-blur-[100px] bg-white/2 absolute top-0 left-0 w-full h-full rounded-4xl p-8">
-              <video src="/tx-success.mp4" autoPlay loop muted className="rounded-2xl"></video>
+              <VideoWithOverlay src="/tx-success.mp4" />
               {/* card content needs update */}
               <div>
                 <div className="text-gray-300 mt-12 font-normal text-2xl">
