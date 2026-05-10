@@ -1,34 +1,32 @@
 import { Check, X } from "lucide-react";
 import { motion } from "motion/react";
+import FadeIn from "./Animation/FadeIn";
 
 export default function ProblemSection() {
   return (
     <div className="w-full flex flex-col justify-center items-center pb-34">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
+      <FadeIn
         className="max-w-4xl mb-16"
       >
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-7xl mb-6">
-          <div className="flex gap-4 justify-center flex-wrap">
+        <h1 className="text-xl font-bold tracking-tight text-white sm:text-7xl mb-6">
+          <div className="flex gap-1 sm:gap-4 justify-center flex-wrap">
             Yet Another
             <span className="text-transparent bg-clip-text bg-linear-to-b from-[#ffffff] to-[#534fff]">
-              Wallet
+              Wallet ?
             </span>
             Not Really
           </div>
-          <div className="text-lg sm:text-2xl text-gray-300 mt-4 text-center">
+          {/* <div className="text-xs font-secondary font-normal sm:text-xl text-gray-300 mt-1 sm:mt-4 text-center">
             A dev-first wallet built for debugging, not just sending
-          </div>
+          </div> */}
         </h1>
-      </motion.div>
+      </FadeIn>
       <div>
         <div className="flex flex-col sm:flex-row gap-12">
 
           {/* failure card */}
-          <div
+          <FadeIn
+          delay={0.3}
             className="relative h-[480px] w-[400px]"
           >
             <div className="bg-rose-400 w-[150px] h-[200px] absolute top-0 left-1/2 transform -translate-x-1/2"></div>
@@ -62,10 +60,11 @@ export default function ProblemSection() {
                 </div>
               </div>
             </div>
-          </div>
+          </FadeIn>
 
           {/* success card */}
-          <div
+          <FadeIn
+            delay={0.5}
             className="relative h-[480px] w-[400px]"
           >
             <div className="bg-primary w-[150px] h-[200px] absolute top-0 left-1/2 transform -translate-x-1/2"></div>
@@ -99,7 +98,7 @@ export default function ProblemSection() {
                 </div>
               </div>
             </div>
-          </div>
+          </FadeIn>
 
         </div>
       </div>
