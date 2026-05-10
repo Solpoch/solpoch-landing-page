@@ -3,7 +3,6 @@ import { ArrowRight, Github } from "lucide-react";
 import { useState } from "react";
 import DownloadModal from "./Modals/DownloadModal";
 import { githubUrl } from "../lib/constants";
-import ProblemSection from "./ProblemSection";
 
 export default function Hero() {
 
