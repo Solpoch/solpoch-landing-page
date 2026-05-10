@@ -10,7 +10,7 @@ export default function App() {
     <div className="min-h-screen bg-black overflow-x-hidden h-fit scrollbar">
       <Hero />
       <BentoGrid />
-      {/* <WalletStandardTestSection /> */}
+      <WalletStandardTestSection />
       <ProblemSection />
       <Footer />
     </div>

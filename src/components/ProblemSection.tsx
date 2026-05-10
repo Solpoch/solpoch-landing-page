@@ -1,14 +1,13 @@
 import { Check, X } from "lucide-react";
-import { motion } from "motion/react";
 import FadeIn from "./Animation/FadeIn";
 
 export default function ProblemSection() {
   return (
-    <div className="w-full flex flex-col justify-center items-center pb-34">
+    <div className="w-full flex flex-col justify-center items-center py-8 sm:py-34">
       <FadeIn
-        className="max-w-4xl mb-16"
+        className="max-w-4xl mb-4 sm:mb-16"
       >
-        <h1 className="text-xl font-bold tracking-tight text-white sm:text-7xl mb-6">
+        <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-7xl mb-6">
           <div className="flex gap-1 sm:gap-4 justify-center flex-wrap">
             Yet Another
             <span className="text-transparent bg-clip-text bg-linear-to-b from-[#ffffff] to-[#534fff]">
@@ -22,17 +21,17 @@ export default function ProblemSection() {
         </h1>
       </FadeIn>
       <div>
-        <div className="flex flex-col sm:flex-row gap-12">
+        <div className="flex flex-col sm:flex-row gap-6 flex-wrap justify-center items-center">
 
           {/* failure card */}
           <FadeIn
           delay={0.3}
-            className="relative h-[480px] w-[400px]"
+            className="relative h-[520px] w-full sm:h-[565px] sm:w-[488px]"
           >
             <div className="bg-rose-400 w-[150px] h-[200px] absolute top-0 left-1/2 transform -translate-x-1/2"></div>
             <div className="backdrop-blur-[100px] bg-white/2 absolute top-0 left-0 w-full h-full rounded-4xl p-8">
               <video src="/tx-error.mp4" autoPlay loop muted className="rounded-2xl"></video>
-              <div className="text-rose-300 mt-6 font-normal text-2xl">
+              <div className="text-rose-300 mt-12 font-normal text-2xl">
                 <h1>No idea ? You're flying blind</h1>
               </div>
               {/* card content needs update */}
@@ -65,14 +64,14 @@ export default function ProblemSection() {
           {/* success card */}
           <FadeIn
             delay={0.5}
-            className="relative h-[480px] w-[400px]"
+            className="relative h-[520px] w-[400px] sm:h-[565px] sm:w-[488px]"
           >
             <div className="bg-primary w-[150px] h-[200px] absolute top-0 left-1/2 transform -translate-x-1/2"></div>
             <div className="backdrop-blur-[100px] bg-white/2 absolute top-0 left-0 w-full h-full rounded-4xl p-8">
               <video src="/tx-success.mp4" autoPlay loop muted className="rounded-2xl"></video>
               {/* card content needs update */}
               <div>
-                <div className="text-gray-300 mt-6 font-normal text-2xl">
+                <div className="text-gray-300 mt-12 font-normal text-2xl">
                   <h1>Debug and fix with Solpoch</h1>
                 </div>
                 <div className="text-gray-300/50 text-sm">

@@ -17,16 +17,16 @@ export default function WalletStandardTestSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="max-w-4xl mb-12"
-        >
-          <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-7xl mb-6">
-            <div className="flex gap-4 justify-center flex-wrap">
+                  className="max-w-4xl mb-4 sm:mb-16"
+      >
+        <h1 className="text-2xl font-extrabold tracking-tight text-white sm:text-7xl mb-6">
+          <div className="flex gap-1 sm:gap-4 justify-center flex-wrap">
               Supporting
               <span className="text-transparent bg-clip-text bg-linear-to-b from-[#ffffff] to-[#534fff]">
                 Wallet Standard
               </span>
             </div>
-            <div className="text-lg sm:text-2xl text-gray-300 mt-4 text-center">
+            <div className="text-xs font-secondary font-normal sm:text-xl text-gray-300 mt-1 sm:mt-4 text-center">
               Test wallet standard compatibility instantly
             </div>
           </h1>

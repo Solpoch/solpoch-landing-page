@@ -8,12 +8,12 @@ import Trace from "./Trace";
 
 export default function BentoGrid() {
   return (
-    <div className="w-full flex flex-col justify-center items-center pb-34 px-4">
+    <div className="w-full flex flex-col justify-center items-center pb-12 sm:pb-40 px-4">
       <FadeIn
         delay={0.2}
-        className="max-w-4xl mb-16"
+        className="max-w-4xl mb-4 sm:mb-16"
       >
-        <h1 className="text-xl font-bold tracking-tight text-white sm:text-7xl mb-6">
+        <h1 className="text-2xl font-bold tracking-tight text-white sm:text-7xl mb-6">
           <div className="flex gap-1 sm:gap-4 justify-center flex-wrap">
             Supercharged
             <span className="text-transparent bg-clip-text bg-linear-to-b from-[#ffffff] to-[#534fff]">
@@ -43,10 +43,10 @@ export default function BentoGrid() {
             <DappPayload />
           </FadeIn>
           <div className="flex flex-col gap-6">
-            <FadeIn delay={0.3}>
+            <FadeIn delay={0.4}>
               <Hook />
             </FadeIn>
-            <FadeIn delay={0.1}>
+            <FadeIn>
               <AiFix />
             </FadeIn>
           </div>
