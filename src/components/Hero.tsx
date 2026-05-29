@@ -86,9 +86,9 @@ export default function Hero() {
 
           {/* Visuals */}
 
-          <DemoVideo />
 
         </div>
+        <DemoVideo />
       </section>
     </>
   );
