@@ -83,10 +83,6 @@ export default function Hero() {
               </button>
             </motion.div>
           </div>
-
-          {/* Visuals */}
-
-
         </div>
         <DemoVideo />
       </section>
