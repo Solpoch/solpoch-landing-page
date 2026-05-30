@@ -53,8 +53,16 @@ export default function DemoVideo() {
           start: 0,
           end: 17,
           content: (
-            <div>
-              Developers struggle to debug Solana transactions due to limited tooling, often leading to unexplained failed transactions and wasted time.
+            <div className='flex gap-4'>
+              <FadeIn>
+                <div className='p-6 bg-white/5 rounded-2xl w-fit'>
+                  <h3 className='text-lg font-bold'>Problem: Debugging Failed Transaction</h3>
+                  <p className='text-gray-300 text-sm mt-2'>
+                    Developers struggle to debug Solana transactions due to <span className='text-pink-300 font-bold'>limited tooling</span> , <br /> often leading to <span className='text-pink-300 font-bold'>unexplained failed transactions</span> and wasted time
+                  </p>
+                </div>
+              </FadeIn>
+
             </div>
           ),
         },
@@ -63,9 +71,14 @@ export default function DemoVideo() {
           start: 17,
           end: 25,
           content: (
-            <div>
-              Users are forced to blindly approve fishy transactions because traditional wallets act as opaque black boxes without exposing underlying execution details.
-            </div>
+            <FadeIn >
+              <div className='p-6 bg-white/5 rounded-2xl w-fit'>
+                <h3 className='text-lg font-bold'>Problem: Opaque Wallet Interactions</h3>
+                <p className='text-gray-300 text-sm mt-2'>
+                  Users are forced to <span className='text-pink-300 font-bold'>blindly approve fishy transactions</span> because traditional wallets act as opaque <br /> <span className='text-pink-300 font-bold'>black boxes without exposing underlying execution</span> details.
+                </p>
+              </div>
+            </FadeIn>
           ),
         }
       ]
@@ -82,9 +95,9 @@ export default function DemoVideo() {
           end: 61,
           content: (
             <FadeIn>
-              <div className='border border-white/5 bg-fix p-6 h-full rounded-2xl w-full'>
-                <h2 className='text-3xl font-bold'>What's <span className='text-primary'>Solpoch</span> ?</h2>
-                <p className='mt-3 text-lg w-[60%]'>
+              <div className='border border-white/5 bg-white/5 p-6 h-full rounded-2xl w-[60%]'>
+                <h2 className='text-lg font-bold'>What's Solpoch ?</h2>
+                <p className='mt-3 text-sm'>
                   Solpoch brings <span className='text-green-300'>observability, debugging, and security tooling <span className='font-bold'> directly into the wallet experience</span></span>, providing clear, live traces of every transaction call.
                 </p>
               </div>
@@ -97,7 +110,7 @@ export default function DemoVideo() {
       id: 'chapter-3',
       title: 'Example 1: Live Debugging & Auto-Fixing',
       start: 61,
-      end: 105,
+      end: 140,
       highlights: [
         {
           title: "Live Execution Traces",
@@ -105,18 +118,24 @@ export default function DemoVideo() {
           end: 90,
           content: (
             <div className='flex gap-4 w-full'>
-              <div className='p-6 bg-fix hue-rotate-200 rounded-2xl'>
-                <h3 className='text-lg font-bold'>RPC trace</h3>
-                <p className='text-gray-300 text-sm'>showing the sequence of RPC calls and time it took</p>
-              </div>
-              <div className='p-6 bg-fix hue-rotate-200 rounded-2xl'>
-                <h3 className='text-lg font-bold'>Excecution trace</h3>
-                <p className='text-gray-300 text-sm'>order of execution in valut, spl, rpc etc</p>
-              </div>
-              <ul>
-                <li>Excecution trace - valut , rpc, spl etc</li>
-                <li>tree of execution with payload and result</li>
-              </ul>
+              <FadeIn delay={5}>
+                <div className='p-6 bg-white/5 rounded-2xl'>
+                  <h3 className='text-lg font-bold'>RPC trace</h3>
+                  <p className='text-gray-300 text-sm mt-2'>showing the sequence of RPC calls and time it took</p>
+                </div>
+              </FadeIn>
+              <FadeIn delay={7}>
+                <div className='p-6 bg-white/5 rounded-2xl'>
+                  <h3 className='text-lg font-bold'>Excecution trace</h3>
+                  <p className='text-gray-300 text-sm mt-2'>order of execution in valut, spl, rpc etc</p>
+                </div>
+              </FadeIn>
+              <FadeIn delay={9}>
+                <div className='p-6 bg-white/5 rounded-2xl'>
+                  <h3 className='text-lg font-bold'>Trace Tree</h3>
+                  <p className='text-gray-300 text-sm mt-2'>execution flow with payload and result</p>
+                </div>
+              </FadeIn>
             </div>
           ),
           imp: true
@@ -126,9 +145,15 @@ export default function DemoVideo() {
           start: 90,
           end: 105,
           content: (
-            <div>
-              Solpoch breaks down failing operations into human-readable explanations and pinpoints the exact step and reason for failure, eliminating guesswork from debugging. tells you why it failed and how to fix it.
-            </div>
+            <FadeIn>
+              <div className='p-6 bg-white/5 rounded-2xl w-fit'>
+                <div className="flex items-center gap-2">
+                  <h3 className='text-lg font-bold'>AI-Powered Diagnosis</h3>
+                  <img src="/ai.png" alt="" className='w-4' />
+                </div>
+                <p className='text-gray-300 text-sm mt-2'>identify <span className='text-green-300'>root causes of failures</span> and provides <br /> <span className="text-green-300">actionable insights</span> for resolution.</p>
+              </div>
+            </FadeIn>
           ),
           imp: true
         },
@@ -137,9 +162,12 @@ export default function DemoVideo() {
           start: 109,
           end: 116,
           content: (
-            <div>
-              The extension identifies auto-fixable issues (like a missing Associated Token Account) and allows developers to resolve them instantly with a single confirmation click.
-            </div>
+            <FadeIn>
+              <div className='p-6 bg-white/5 rounded-2xl w-fit'>
+                <h3 className='text-lg font-bold'>One-Click Error Resolution</h3>
+                <p className='text-gray-300 text-sm mt-2'>resolve auto-fixable issues instantly with a single confirmation click</p>
+              </div>
+            </FadeIn>
           ),
         },
         {
@@ -147,9 +175,12 @@ export default function DemoVideo() {
           start: 116,
           end: 125,
           content: (
-            <div>
-              The extension identifies auto-fixable issues (like a missing Associated Token Account) and allows developers to resolve them instantly with a single confirmation click.
-            </div>
+            <FadeIn delay={0.5}>
+              <div className='p-6 bg-white/5 rounded-2xl w-fit'>
+                <h3 className='text-lg font-bold'>Instruction Debugger</h3>
+                <p className='text-gray-300 text-sm mt-2'>analyze and debug instruction-level issues in real-time</p>
+              </div>
+            </FadeIn>
           ),
         }
       ]
@@ -158,27 +189,33 @@ export default function DemoVideo() {
       id: 'chapter-4',
       title: 'Example 2: Security & Malicious Detection',
       start: 140,
-      end: 160,
+      end: 172,
       highlights: [
         {
           title: "Wallet Standard & dApp Support",
           start: 140,
           end: 147,
           content: (
-            <div>
-              Because Solpoch supports the Solana wallet standard, its inspection capabilities work seamlessly across various decentralized applications.
-            </div>
+            <FadeIn>
+              <div className='p-6 bg-white/5 rounded-2xl w-fit'>
+                <h3 className='text-lg font-bold'>Wallet Standard: Dapp inspection</h3>
+                <p className='text-gray-300 text-sm mt-2'>wallet standard lets inspection capabilities work seamlessly across various decentralized applications.</p>
+              </div>
+            </FadeIn>
           ),
           imp: false
         },
         {
-          title: "Catching Wallet Drainers",
+          title: "Catching Fishy Transactions",
           start: 147,
           end: 172,
           content: (
-            <div>
-              Pre-flight payload inspection analyzes behavior to detect malicious strings and suspicious patterns commonly seen in wallet drainer attacks before approval.
-            </div>
+            <FadeIn delay={0.5}>
+              <div className='p-6 bg-white/5 rounded-2xl w-fit'>
+                <h3 className='text-lg font-bold'>Catching Fishy Transactions</h3>
+                <p className='text-gray-300 text-sm mt-2'>Pre-flight payload inspection analyzes behavior to detect malicious strings and suspicious patterns commonly seen in wallet drainer attacks before approval.</p>
+              </div>
+            </FadeIn>
           ),
           imp: true
         }
@@ -188,15 +225,32 @@ export default function DemoVideo() {
       id: 'chapter-5',
       title: 'Advanced Developer Tooling',
       start: 173,
-      end: 180,
+      end: 200,
       highlights: [
         {
           title: "Dev Hooks & Inspection Tools",
-          start: 173,
-          end: 180,
+          start: 180,
+          end: 200,
           content: (
-            <div>
-              SolPouch exposes an array of built-in developer tools including manual ATA creation, copying cURL commands, transaction replay, and a dedicated developer playground.
+            <div className="flex gap-4">
+              <FadeIn delay={0.5}>
+                <div className='p-6 bg-white/5 rounded-2xl w-fit'>
+                  <h3 className='text-lg font-bold'>Dev Hooks & Inspection Tools</h3>
+                  <p className='text-gray-300 text-sm mt-2'>Solpoch exposes an array of built-in developer tools including manual ATA creation, copying cURL commands, transaction replay, and a dedicated developer playground.</p>
+                </div>
+              </FadeIn>
+              <FadeIn delay={2}>
+                <div className='p-6 bg-white/5 rounded-2xl w-fit'>
+                  <h3 className='text-lg font-bold'>Replay Transaction</h3>
+                  <p className='text-gray-300 text-sm mt-2'>Easily replay previous transactions to test and debug your application.</p>
+                </div>
+              </FadeIn>
+              <FadeIn delay={3}>
+                <div className='p-6 bg-white/5 rounded-2xl w-fit'>
+                  <h3 className='text-lg font-bold'>Developer Playground</h3>
+                  <p className='text-gray-300 text-sm mt-2'>A dedicated space for developers to experiment with Solpoch's features and test their applications.</p>
+                </div>
+              </FadeIn>
             </div>
           ),
         }
@@ -275,7 +329,7 @@ export default function DemoVideo() {
       {
         openVideoModal && (
           <div className='w-screen h-screen inset-0 fixed z-100 bg-black'>
-            <div className='grid grid-cols-[70%_calc(30%-var(--spacing)*8)] gap-8 p-8 text-white w-screen h-screen' >
+            <div className='grid grid-cols-[75%_calc(25%-var(--spacing)*8)] gap-8 p-8 text-white w-screen h-screen' >
               {/* video player */}
               <div className='flex flex-col gap-4'>
                 <div className='flex flex-col gap-3 relative'>
@@ -359,7 +413,7 @@ export default function DemoVideo() {
                       <div
                         key={chapter.id}
                         className={[
-                          'rounded-2xl px-4 py-3 text-sm transition',
+                          'rounded-2xl py-3 text-sm transition',
                           isActive ? 'text-green-300 font-bold' : 'border-white/10 text-white/60'
                         ].join(' ')}
                       >
@@ -389,9 +443,9 @@ export default function DemoVideo() {
                               <button
                                 key={`${chapter.id}-highlight-${index}`}
                                 className={[
-                                  'flex items-start gap-2 text-left text-xs transition rounded-xl',
-                                  isHighlightActive ? 'text-green-300 font-bold' : 'text-white/60',
-                                  highlight.imp ? 'bg-fix' : ''
+                                  'flex items-start gap-2 text-left text-xs transition rounded-lg px-3',
+                                  isHighlightActive ? 'text-green-300 font-bold bg-green-500/10' : 'text-white/60 bg-white/5',
+                                  // highlight.imp ? 'bg-fix' : ''
                                 ].join(' ')}
                                 onClick={() => seekTo(highlight.start)}
                               >
@@ -401,10 +455,23 @@ export default function DemoVideo() {
                                     isHighlightActive ? 'bg-green-300' : 'bg-white/30'
                                   ].join(' ')}
                                 />
-                                <span className='flex-1'>
-                                  <span className='block font-medium'>{highlight.title}</span>
-                                  <span className='text-[11px] text-white/40'>{highlight.start}s - {highlight.end}s</span>
-                                </span>
+                                <div className='flex justify-between items-center w-full'>
+                                  <div className='flex-1'>
+                                    <div className="flex justify-between items-center">
+                                      <h3 className='block font-medium'>{highlight.title}</h3>
+
+                                    </div>
+                                    <span className='text-[11px] text-white/40'>{highlight.start}s - {highlight.end}s</span>
+                                  </div>
+                                  {
+                                    highlight.imp && (
+                                      <div className='flex gap-2 items-center'>
+                                        <span className='text-[10px] text-green-300/70'>Key Movement</span>
+                                        <img src="/ai.png" alt="ai" className='w-4' />
+                                      </div>
+                                    )
+                                  }
+                                </div>
                               </button>
                             )
                           })}
