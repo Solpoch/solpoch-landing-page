@@ -379,7 +379,7 @@ export default function DemoVideo() {
                     onTimeUpdate={(e) => setCurrentTime(e.currentTarget.currentTime || 0)}
                     onPlay={() => setIsPlaying(true)}
                     onPause={() => setIsPlaying(false)}
-                    className='bg-white/10 rounded-2xl'
+                    className='bg-white/10 rounded-2xl w-full aspect-video'
                   />
                   <div className='flex items-center gap-4 absolute w-full bg-gradient-to-t from-black to-transparent bottom-0 left-0 p-4'>
                     <button
@@ -413,7 +413,7 @@ export default function DemoVideo() {
                     />
                   </div>
                 </div>
-                <div className='h-full w-full overflow-scroll'>
+                <div className='h-full w-full overflow-y-auto scrollbar-hide'>
 
                   {activeHighlights.length > 0 ?
                     activeHighlights.map((highlight, index) => (
