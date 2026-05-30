@@ -361,7 +361,7 @@ export default function DemoVideo() {
             100s Demo
           </div>
         </div>
-        <img src="/product4.png" alt="divider" className="w-full max-w-4xl my-16 z-10 mt-8" />
+        <img src="https://solpoch.sfo3.cdn.digitaloceanspaces.com/product4.webp" alt="divider" className="w-full max-w-4xl my-16 z-10 mt-8" />
       </motion.div>
 
       {/* video modal */}
@@ -471,7 +471,7 @@ export default function DemoVideo() {
                         </button>
                         <div className='mt-3 h-1.5 w-full rounded-full bg-white/10'>
                           <div
-                            className='h-1.5 rounded-full bg-gradient-to-r from-[#534fff] to-[#70ff6b]'
+                            className='h-1.5 rounded-full bg-gradient-to-r from-primary to-[#70ff6b]'
                             style={{ width: `${chapterProgress}%` }}
                           />
                         </div>

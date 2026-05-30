@@ -16,7 +16,7 @@ export default function BentoGrid() {
         <h1 className="text-2xl font-bold tracking-tight text-white sm:text-7xl mb-6">
           <div className="flex gap-1 sm:gap-4 justify-center flex-wrap">
             Supercharged
-            <span className="text-transparent bg-clip-text bg-linear-to-b from-[#ffffff] to-[#534fff]">
+            <span className="text-transparent bg-clip-text bg-linear-to-b from-[#ffffff] to-primary">
               Debugging
             </span>
             {/* Not Really */}

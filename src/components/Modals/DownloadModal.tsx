@@ -49,7 +49,7 @@ export default function DownloadModal({ setShowDownloadModal }: { setShowDownloa
             </div>
           </div>
           <div className="flex flex-col items-center justify-start h-fit bg-black/20 rounded-2xl">
-            <img src="/install.png" alt="Installation Guide" className="w-full" />
+            <img src="https://solpoch.sfo3.cdn.digitaloceanspaces.com/install.webp" alt="Installation Guide" className="w-full" />
           </div>
         </div>
       </div>

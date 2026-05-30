@@ -56,7 +56,7 @@ export default function ProblemSection() {
         <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-7xl mb-6">
           <div className="flex gap-1 sm:gap-4 justify-center flex-wrap">
             Yet Another
-            <span className="text-transparent bg-clip-text bg-linear-to-b from-[#ffffff] to-[#534fff]">
+            <span className="text-transparent bg-clip-text bg-linear-to-b from-[#ffffff] to-primary">
               Wallet ?
             </span>
             Not Really
@@ -76,7 +76,7 @@ export default function ProblemSection() {
           >
             <div className="bg-rose-400 w-[150px] h-[200px] absolute top-0 left-1/2 transform -translate-x-1/2"></div>
             <div className="backdrop-blur-[100px] bg-white/2 absolute top-0 left-0 w-full h-full rounded-4xl p-8">
-              <VideoWithOverlay src="/tx-error.mp4" />
+              <VideoWithOverlay src="https://solpoch.sfo3.cdn.digitaloceanspaces.com/tx-error.webm" />
               <div className="text-rose-300 mt-12 font-normal text-2xl">
                 <h1>No idea ? You're flying blind</h1>
               </div>
@@ -114,7 +114,7 @@ export default function ProblemSection() {
           >
             <div className="bg-primary w-[150px] h-[200px] absolute top-0 left-1/2 transform -translate-x-1/2"></div>
             <div className="backdrop-blur-[100px] bg-white/2 absolute top-0 left-0 w-full h-full rounded-4xl p-8">
-              <VideoWithOverlay src="/tx-success.mp4" />
+              <VideoWithOverlay src="https://solpoch.sfo3.cdn.digitaloceanspaces.com/tx-success.webm" />
               {/* card content needs update */}
               <div>
                 <div className="text-gray-300 mt-12 font-normal text-2xl">

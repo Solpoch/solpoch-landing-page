@@ -27,7 +27,7 @@ export default function Hero() {
             >
               {/* <span className="flex h-2 w-2 rounded-full bg-green-500 mr-2"></span>
             The Dev Wallet for Solana */}
-              <img src="/logo-long.png" alt="Solpoch Logo" className="h-6 sm:h-12 mb-4" />
+              <img src="https://solpoch.sfo3.cdn.digitaloceanspaces.com/logo-long.webp" alt="Solpoch Logo" className="h-6 sm:h-12 mb-4" />
             </motion.div>
 
             {/* Headline */}
@@ -38,12 +38,12 @@ export default function Hero() {
               className="max-w-4xl"
             >
               <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-7xl mb-6">
-                <span className="text-transparent bg-clip-text bg-linear-to-b from-[#ffffff] to-[#534fff]">
+                <span className="text-transparent bg-clip-text bg-linear-to-b from-[#ffffff] to-primary">
                   Chrome DevTools
                 </span>
                 <div className="flex sm:gap-4 flex-wrap justify-center">
                   for Solana
-                  <span className="font-secondary font-bold italic text-transparent bg-clip-text bg-linear-to-b from-[#ffffff] to-[#534fff] leading-[1]">
+                  <span className="font-secondary font-bold italic text-transparent bg-clip-text bg-linear-to-b from-[#ffffff] to-primary leading-none">
                     Transactions
                   </span>
                 </div>

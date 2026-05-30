@@ -14,7 +14,7 @@ export default function Footer() {
       }
       <footer className={`w-screen h-[590px]  ${isMobile ? 'bg-footer-mobile' : 'bg-footer'}`} >
         <div className="sm:pt-16 sm:px-16 sm:w-1/3 pt-8 px-8">
-          <img src="/logo-long.png" alt="Solpoch Logo" className="h-6 sm:h-12 sm:mb-12 mb-8" />
+          <img src="https://solpoch.sfo3.cdn.digitaloceanspaces.com/logo-long.webp" alt="Solpoch Logo" className="h-6 sm:h-12 sm:mb-12 mb-8" />
           <h2 className="text-3xl sm:text-5xl font-bold text-white mb-8">Ready to supercharge your Solana development?</h2>
           <div className="flex gap-4">
             <button className="inline-flex h-12 items-center justify-center rounded-full bg-white px-8 text-sm font-semibold text-black transition-colors hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-900"
