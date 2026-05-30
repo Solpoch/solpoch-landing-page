@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { useEffect, useRef, useState, type ReactNode } from 'react';
-import { CornerDownLeft, FishingHook, PauseIcon, PlayIcon, XIcon } from 'lucide-react';
+import { CornerDownLeft, PauseIcon, PlayIcon, XIcon } from 'lucide-react';
 import { LiquidMetal } from '@paper-design/shaders-react';
 import FadeIn from './Animation/FadeIn';
 
