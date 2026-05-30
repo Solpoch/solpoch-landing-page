@@ -22,7 +22,7 @@ type Chapter = {
 
 export default function DemoVideo() {
 
-  const [openVideoModal, setOpenVideoModal] = useState(true)
+  const [openVideoModal, setOpenVideoModal] = useState(false)
   const videoRef = useRef<HTMLVideoElement | null>(null)
   const [isPlaying, setIsPlaying] = useState(false)
   const [currentTime, setCurrentTime] = useState(0)
@@ -295,7 +295,7 @@ export default function DemoVideo() {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="flex items-center justify-center z-10 relative"
       >
-        <div className='w-fit absolute m-auto z-20 bottom-[50px] flex flex-col items-center gap-6'>
+        <div className='w-fit absolute m-auto z-20 bottom-[50px] sm:flex flex-col items-center gap-6 hidden'>
           <div
             className='relative inline-flex rounded-full overflow-hidden cursor-pointer'
             onClick={() => { setOpenVideoModal(true) }}
@@ -329,7 +329,7 @@ export default function DemoVideo() {
       {
         openVideoModal && (
           <div className='w-screen h-screen inset-0 fixed z-100 bg-black'>
-            <div className='grid grid-cols-[75%_calc(25%-var(--spacing)*8)] gap-8 p-8 text-white w-screen h-screen' >
+            <div className='grid grid-cols-[70%_calc(30%-var(--spacing)*8)] gap-8 p-8 text-white w-screen h-screen' >
               {/* video player */}
               <div className='flex flex-col gap-4'>
                 <div className='flex flex-col gap-3 relative'>
