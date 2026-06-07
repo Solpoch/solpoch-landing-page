@@ -55,9 +55,9 @@ export default function DemoVideo() {
           content: (
             <div className='flex gap-4'>
               <FadeIn>
-                <div className='p-6 bg-white/5 rounded-2xl w-[60%]'>
-                  <h3 className='text-lg font-bold'>Problem: Failed Transactions Are Hard to Explain</h3>
-                  <p className='text-gray-300 text-sm mt-2'>
+                <div className='p-6 bg-white/5 rounded-2xl sm:w-[60%]'>
+                  <h3 className='text-sm sm:text-lg font-bold'>Problem: Failed Transactions Are Hard to Explain</h3>
+                  <p className='text-gray-300 text-xs sm:text-sm mt-2'>
                     Solana developers often spend hours debugging failed transactions due to
                     <span className='text-pink-300 font-bold'> fragmented tooling and limited visibility</span>,
                     making it difficult to identify
@@ -74,9 +74,9 @@ export default function DemoVideo() {
           end: 25,
           content: (
             <FadeIn>
-              <div className='p-6 bg-white/5 rounded-2xl w-[60%]'>
-                <h3 className='text-lg font-bold'>Problem: Wallets Hide Critical Context</h3>
-                <p className='text-gray-300 text-sm mt-2'>
+              <div className='p-6 bg-white/5 rounded-2xl sm:w-[60%]'>
+                <h3 className='text-sm sm:text-lg font-bold'>Problem: Wallets Hide Critical Context</h3>
+                <p className='text-gray-300 text-xs sm:text-sm mt-2'>
                   Users are routinely asked to
                   <span className='text-pink-300 font-bold'> approve transactions they cannot understand</span>.
                   Traditional wallets operate as
@@ -101,9 +101,9 @@ export default function DemoVideo() {
           end: 61,
           content: (
             <FadeIn>
-              <div className='border border-white/5 bg-white/5 p-6 h-full rounded-2xl w-[60%]'>
-                <h2 className='text-lg font-bold'>What is Solpoch?</h2>
-                <p className='mt-3 text-sm'>
+              <div className='border border-white/5 bg-white/5 p-6 h-full rounded-2xl sm:w-[60%]'>
+                <h2 className='text-sm sm:text-lg font-bold'>What is Solpoch?</h2>
+                <p className='mt-3 text-xs sm:text-sm'>
                   Solpoch is the
                   <span className='text-green-300 font-bold'> Chrome DevTools for Solana wallets</span>,
                   bringing
@@ -127,11 +127,11 @@ export default function DemoVideo() {
           start: 65,
           end: 90,
           content: (
-            <div className='flex gap-4 w-full'>
+            <div className='flex gap-4 w-full flex-wrap sm:flex-nowrap'>
               <FadeIn delay={5}>
                 <div className='p-6 bg-white/5 rounded-2xl'>
-                  <h3 className='text-lg font-bold'>RPC Timeline</h3>
-                  <p className='text-gray-300 text-sm mt-2'>
+                  <h3 className='text-sm sm:text-lg font-bold'>RPC Timeline</h3>
+                  <p className='text-gray-300 text-xs sm:text-sm mt-2'>
                     Visualize every RPC request, response, and latency bottleneck in real time.
                   </p>
                 </div>
@@ -139,8 +139,8 @@ export default function DemoVideo() {
 
               <FadeIn delay={7}>
                 <div className='p-6 bg-white/5 rounded-2xl'>
-                  <h3 className='text-lg font-bold'>Execution Trace</h3>
-                  <p className='text-gray-300 text-sm mt-2'>
+                  <h3 className='text-sm sm:text-lg font-bold'>Execution Trace</h3>
+                  <p className='text-gray-300 text-xs sm:text-sm mt-2'>
                     Follow instruction execution across wallet, SPL, programs, and RPC layers.
                   </p>
                 </div>
@@ -148,8 +148,8 @@ export default function DemoVideo() {
 
               <FadeIn delay={9}>
                 <div className='p-6 bg-white/5 rounded-2xl'>
-                  <h3 className='text-lg font-bold'>Trace Tree</h3>
-                  <p className='text-gray-300 text-sm mt-2'>
+                  <h3 className='text-sm sm:text-lg font-bold'>Trace Tree</h3>
+                  <p className='text-gray-300 text-xs sm:text-sm mt-2'>
                     Inspect execution flow, payloads, return values, and nested program interactions.
                   </p>
                 </div>
@@ -164,12 +164,12 @@ export default function DemoVideo() {
           end: 105,
           content: (
             <FadeIn>
-              <div className='p-6 bg-white/5 rounded-2xl w-[50%]'>
+              <div className='p-6 bg-white/5 rounded-2xl sm:w-[50%]'>
                 <div className="flex items-center gap-2">
-                  <h3 className='text-lg font-bold'>AI-Powered Diagnosis</h3>
+                  <h3 className='text-sm sm:text-lg font-bold'>AI-Powered Diagnosis</h3>
                   <img src="/ai.png" alt="" className='w-4' />
                 </div>
-                <p className='text-gray-300 text-sm mt-2'>
+                <p className='text-gray-300 text-xs sm:text-sm mt-2'>
                   Instantly identify
                   <span className='text-green-300'> failure root causes</span>,
                   understand complex error chains, and receive
@@ -187,8 +187,8 @@ export default function DemoVideo() {
           content: (
             <FadeIn>
               <div className='p-6 bg-white/5 rounded-2xl w-fit'>
-                <h3 className='text-lg font-bold'>One-Click Error Resolution</h3>
-                <p className='text-gray-300 text-sm mt-2'>
+                <h3 className='text-sm sm:text-lg font-bold'>One-Click Error Resolution</h3>
+                <p className='text-gray-300 text-xs sm:text-sm mt-2'>
                   Automatically fix common transaction issues and retry execution with a single confirmation.
                 </p>
               </div>
@@ -202,8 +202,8 @@ export default function DemoVideo() {
           content: (
             <FadeIn>
               <div className='p-6 bg-white/5 rounded-2xl w-fit'>
-                <h3 className='text-lg font-bold'>Instruction-Level Debugger</h3>
-                <p className='text-gray-300 text-sm mt-2'>
+                <h3 className='text-sm sm:text-lg font-bold'>Instruction-Level Debugger</h3>
+                <p className='text-gray-300 text-xs sm:text-sm mt-2'>
                   Drill into individual instructions to inspect accounts, parameters, logs, and execution outcomes.
                 </p>
               </div>
@@ -224,9 +224,9 @@ export default function DemoVideo() {
           end: 147,
           content: (
             <FadeIn>
-              <div className='p-6 bg-white/5 rounded-2xl w-[60%]'>
-                <h3 className='text-lg font-bold'>Wallet Standard Integration</h3>
-                <p className='text-gray-300 text-sm mt-2'>
+              <div className='p-6 bg-white/5 rounded-2xl sm:w-[60%]'>
+                <h3 className='text-sm sm:text-lg font-bold'>Wallet Standard Integration</h3>
+                <p className='text-gray-300 text-xs sm:text-sm mt-2'>
                   Built on the Solana <span className='text-green-300 font-bold'>Wallet Standard</span>, enabling transaction inspection and security analysis across supported <span className='text-green-300'>dApps without requiring custom integrations</span>.
                 </p>
               </div>
@@ -240,9 +240,9 @@ export default function DemoVideo() {
           end: 172,
           content: (
             <FadeIn delay={0.5}>
-              <div className='p-6 bg-white/5 rounded-2xl w-[60%]'>
-                <h3 className='text-lg font-bold'>Detecting Malicious Transactions</h3>
-                <p className='text-gray-300 text-sm mt-2'>
+              <div className='p-6 bg-white/5 rounded-2xl sm:w-[60%]'>
+                <h3 className='text-sm sm:text-lg font-bold'>Detecting Malicious Transactions</h3>
+                <p className='text-gray-300 text-xs sm:text-sm mt-2'>
                   Pre-flight transaction analysis identifies <span className='text-green-300 font-bold'>suspicious behavior, dangerous instructions, wallet drainers,</span> and known attack patterns before users sign.
                 </p>
               </div>
@@ -266,8 +266,8 @@ export default function DemoVideo() {
             <div className="flex gap-4">
               <FadeIn delay={0.5}>
                 <div className='p-6 bg-white/5 rounded-2xl w-full'>
-                  <h3 className='text-lg font-bold'>Developer Toolkit</h3>
-                  <p className='text-gray-300 text-sm mt-2'>
+                  <h3 className='text-sm sm:text-lg font-bold'>Developer Toolkit</h3>
+                  <p className='text-gray-300 text-xs sm:text-sm mt-2'>
                     Powerful utilities including manual <span className='text-green-300 font-bold'>ATA creation, cURL export, transaction replay, execution inspection,</span> and advanced debugging workflows.
                   </p>
                 </div>
@@ -275,8 +275,8 @@ export default function DemoVideo() {
 
               <FadeIn delay={2}>
                 <div className='p-6 bg-white/5 rounded-2xl w-full'>
-                  <h3 className='text-lg font-bold'>Transaction Replay</h3>
-                  <p className='text-gray-300 text-sm mt-2'>
+                  <h3 className='text-sm sm:text-lg font-bold'>Transaction Replay</h3>
+                  <p className='text-gray-300 text-xs sm:text-sm mt-2'>
                     Re-execute historical transactions to reproduce bugs, validate fixes, and test edge cases.
                   </p>
                 </div>
@@ -284,8 +284,8 @@ export default function DemoVideo() {
 
               <FadeIn delay={3}>
                 <div className='p-6 bg-white/5 rounded-2xl w-full'>
-                  <h3 className='text-lg font-bold'>Developer Playground</h3>
-                  <p className='text-gray-300 text-sm mt-2'>
+                  <h3 className='text-sm sm:text-lg font-bold'>Developer Playground</h3>
+                  <p className='text-gray-300 text-xs sm:text-sm mt-2'>
                     An interactive environment for experimenting with wallet internals, testing flows, and exploring Solpoch capabilities.
                   </p>
                 </div>
@@ -334,7 +334,7 @@ export default function DemoVideo() {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="flex items-center justify-center z-10 relative"
       >
-        <div className='w-fit absolute m-auto z-20 bottom-[50px] sm:flex flex-col items-center gap-6 hidden'>
+        <div className='w-fit absolute m-auto z-20 bottom-[50px] flex flex-col items-center sm:gap-6 gap-2'>
           <div
             className='relative inline-flex rounded-full overflow-hidden cursor-pointer'
             onClick={() => { setOpenVideoModal(true) }}
@@ -368,7 +368,7 @@ export default function DemoVideo() {
       {
         openVideoModal && (
           <div className='w-screen h-screen inset-0 fixed z-100 bg-black'>
-            <div className='grid grid-cols-[70%_calc(30%-var(--spacing)*8)] gap-8 p-8 text-white w-screen h-screen' >
+            <div className='grid sm:grid-cols-[70%_calc(30%-var(--spacing)*8)] gap-8 p-4 sm:p-8 text-white w-screen h-screen' >
               {/* video player */}
               <div className='flex flex-col gap-4'>
                 <div className='flex flex-col gap-3 relative'>
