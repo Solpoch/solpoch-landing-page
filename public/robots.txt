@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://solpoch.site/sitemap.xml
