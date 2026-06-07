@@ -361,7 +361,7 @@ export default function DemoVideo() {
             100s Demo
           </div>
         </div>
-        <img src="https://solpoch.sfo3.cdn.digitaloceanspaces.com/product4.webp" alt="divider" className="w-full max-w-4xl my-16 z-10 mt-8" />
+        <img src="https://solpoch.sfo3.cdn.digitaloceanspaces.com/product4.webp" alt="divider" className="w-full max-w-4xl my-16 z-10 mt-8" fetchPriority='high' />
       </motion.div>
 
       {/* video modal */}
